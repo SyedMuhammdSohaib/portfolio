@@ -81,7 +81,10 @@ section > p { margin: 0 0 16px; max-width: 65ch; }
 /* projects */
 .projects { display: grid; gap: 20px; }
 .proj { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
-.proj img { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; border-bottom: 1px solid var(--line); background: var(--bg); }
+.proj a.shot { position: relative; display: block; border-bottom: 1px solid var(--line); }
+.proj a.shot span { position: absolute; right: 12px; bottom: 12px; font: 12px var(--mono); color: var(--fg); background: rgba(15,17,19,.85); border: 1px solid var(--line); border-radius: 6px; padding: 4px 9px; }
+.proj a.shot:hover span { border-color: var(--accent); color: var(--accent); }
+.proj img { display: block; width: 100%; max-width: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: top; background: var(--bg); }
 .proj .body { padding: 22px 24px 24px; }
 .proj .head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
 .proj h3 { font-size: 20px; font-weight: 600; margin: 0; }
@@ -207,12 +210,13 @@ footer { padding-top: 32px; font: 13px var(--mono); color: var(--muted); display
     <div class="projects">
 
       <article class="proj">
-        <img src="images/resume-1.png" alt="AI Resume Analyzer screenshot" onerror="this.remove()">
+        <a class="shot" href="images/resume-1.png" target="_blank" rel="noopener" title="Open full screenshot"><img src="images/resume-1.png" style="object-position: center 11%" alt="AI Resume Analyzer screenshot" onerror="this.parentNode.remove()"><span>View full screenshot ↗</span></a>
         <div class="body">
           <div class="head"><h3>AI Resume Analyzer</h3><span class="tag-state live">Live</span></div>
           <p>Upload a PDF resume and get an ATS score with strengths, weaknesses and suggestions, in English, Roman Urdu, Urdu or Hindi.</p>
           <ul class="feat">
             <li>Finds weak lines and rewrites them, then exports the improved CV as a Word file</li>
+            <li>Bullet rewriter turns one weak resume line into 3 stronger, results-focused versions</li>
             <li>Matches the resume against a job description and writes a cover letter</li>
           </ul>
           <ul class="stack"><li>Next.js</li><li>TypeScript</li><li>FastAPI</li><li>LangChain</li><li>Groq</li><li>Vercel</li></ul>
@@ -224,7 +228,7 @@ footer { padding-top: 32px; font: 13px var(--mono); color: var(--muted); display
       </article>
 
       <article class="proj">
-        <img src="images/clinic-1.png" alt="Pediatric Epilepsy Clinic Assistant screenshot" onerror="this.remove()">
+        <a class="shot" href="images/clinic-1.png" target="_blank" rel="noopener" title="Open full screenshot"><img src="images/clinic-1.png" alt="Pediatric Epilepsy Clinic Assistant screenshot" onerror="this.parentNode.remove()"><span>View full screenshot ↗</span></a>
         <div class="body">
           <div class="head"><h3>Pediatric Epilepsy Clinic Assistant</h3><span class="tag-state progress">In progress</span></div>
           <p>A parent app (Urdu/English) and a doctor dashboard for epilepsy care. The AI only shows doctor-approved answers and never gives medical advice on its own.</p>
@@ -239,7 +243,7 @@ footer { padding-top: 32px; font: 13px var(--mono); color: var(--muted); display
       </article>
 
       <article class="proj">
-        <img src="images/jarvis-1.png" alt="Jarvis Voice Assistant screenshot" onerror="this.remove()">
+        <a class="shot" href="images/jarvis-1.png" target="_blank" rel="noopener" title="Open full screenshot"><img src="images/jarvis-1.png" alt="Jarvis Voice Assistant screenshot" onerror="this.parentNode.remove()"><span>View full screenshot ↗</span></a>
         <div class="body">
           <div class="head"><h3>Jarvis Voice Assistant</h3><span class="tag-state progress">In progress</span></div>
           <p>A desktop assistant you can talk or type to in 6 languages. It answers by voice in the same language.</p>
@@ -254,7 +258,7 @@ footer { padding-top: 32px; font: 13px var(--mono); color: var(--muted); display
       </article>
 
       <article class="proj">
-        <img src="images/rag-1.png" alt="Local RAG Chatbot screenshot" onerror="this.remove()">
+        <a class="shot" href="images/rag-1.png" target="_blank" rel="noopener" title="Open full screenshot"><img src="images/rag-1.png" alt="Local RAG Chatbot screenshot" onerror="this.parentNode.remove()"><span>View full screenshot ↗</span></a>
         <div class="body">
           <div class="head"><h3>Local RAG Chatbot</h3><span class="tag-state local">Runs locally</span></div>
           <p>Upload PDF, TXT or DOCX files and chat with them. It answers only from your files and shows the sources it used.</p>
