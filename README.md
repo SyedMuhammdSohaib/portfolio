@@ -24,3 +24,15 @@ Open `index.html` and edit the section you want. The text for each section is pl
 ## Deploy
 
 Hosted on Vercel as a static site. Every push to `main` redeploys automatically.
+
+## Optional files
+
+Drop these next to `index.html` and they show up automatically:
+
+- `cv.pdf` adds a "Download CV" button
+- `photo.jpg` replaces the initials in the round avatar
+- `images/resume-1.png`, `images/clinic-1.png`, `images/jarvis-1.png`, `images/rag-1.png` add a screenshot to each project
+
+## Contact form
+
+Without setup, the form opens the visitor's email app. To receive messages directly, create a free form at formspree.io and paste its endpoint into `FORM_ENDPOINT` at the top of the script in `index.html`.
