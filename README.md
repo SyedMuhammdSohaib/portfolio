@@ -2,7 +2,7 @@
 
 Personal portfolio of **Syed Muhammad Sohaib**, Python Developer & AI Engineer from Lahore.
 
-A single-page site in plain HTML, CSS and JavaScript (no build step), with a terminal boot screen, code rain, a 3D binary globe, a draggable skill sphere, a sideways project gallery and live project demos.
+A simple, dark, single-page site in plain HTML and CSS with no build step and no animations. The earlier animated version is kept in `index-animated.html`.
 
 ## Run locally
 
@@ -16,7 +16,7 @@ then visit http://localhost:8000
 
 ## Edit content
 
-Open `index.html` and search for `EDIT YOUR CONTENT HERE`. Roles, skills, projects, journey and the code-editor text are plain lists there.
+Open `index.html` and edit the section you want. The text for each section is plain HTML there.
 
 - Screenshots go in `images/` (e.g. `resume-1.png`, `jarvis-1.png`)
 - Demo videos go in `videos/`, or use a YouTube link
