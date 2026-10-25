@@ -2,7 +2,7 @@
 
 Personal portfolio of **Syed Muhammad Sohaib**, Python Developer & AI Engineer from Lahore.
 
-A simple, dark, single-page site in plain HTML and CSS with no build step and no animations. The earlier animated version is kept in `index-animated.html`.
+A simple, dark, single-page site in plain HTML and CSS with no build step and no animations.
 
 ## Run locally
 
