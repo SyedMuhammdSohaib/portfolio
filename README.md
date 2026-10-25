@@ -23,7 +23,7 @@ Open `index.html` and edit the section you want. The text for each section is pl
 
 ## Deploy
 
-Hosted on Vercel as a static site. Every push to `main` redeploys automatically.
+Live at https://syedsohaib.vercel.app, hosted on Vercel as a static site. Every push to `main` redeploys automatically.
 
 ## Optional files
 
